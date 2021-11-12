@@ -276,6 +276,34 @@ ul {
   text-align: center;
 }
 
+/* -------CLIENTS---------*/
+.clients-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients-logo {
+  display: flex;
+  padding-bottom: 94px;
+}
+.clients-logo .item {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-logo .item:not(:last-child) {
+  margin-right: 40px;
+}
+.clients-logo a {
+  display: block;
+}
 /* -------FOOTER---------*/
 .footer {
   background-color: #2f303a;
