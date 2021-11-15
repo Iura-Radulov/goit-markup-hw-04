@@ -116,16 +116,16 @@ ul {
   margin-left: 50px;
 }
 
-.address-header .item {
+.address-link {
   display: flex;
   align-items: center;
 }
-.address-header .envelope {
+.envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
-.address-header .smartphone {
+.smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -135,11 +135,11 @@ ul {
 }
 
 .address-link:hover,
-address-link:focus {
+.address-link:focus {
   color: var(--accent-color);
 }
-.address-link .envelope,
-.address-link .smartphone {
+.envelope,
+.smartphone {
   fill: currentColor;
 }
 
