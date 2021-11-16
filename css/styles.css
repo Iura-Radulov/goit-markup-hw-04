@@ -301,33 +301,32 @@ ul {
   width: 100%;
   height: 45px;
 }
-.team-sociallinks .link,
-.join-sociallinks .link {
+
+.team-sociallinks .link:not(last-child),
+.join-sociallinks .link:not(last-child) {
+  margin-right: 10px;
+}
+.team-sociallinks a {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #afb1b8;
   width: 45px;
   height: 45px;
   border: none;
   border-radius: 50%;
 }
-.team-sociallinks .link:not(last-child),
-.join-sociallinks .link:not(last-child) {
-  margin-right: 10px;
-}
 .team-sociallinks .icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
-.team-sociallinks .link:hover,
-.team-sociallinks .link:focus {
+.team-sociallinks a:hover,
+.team-sociallinks a:focus {
   background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
-.team-sociallinks .icon:hover,
-.team-sociallinks .icon:focus {
-  fill: var(--primary-white-color);
-}
+
 /* -------CLIENTS---------*/
 .clients-title {
   padding-top: 94px;
@@ -343,13 +342,14 @@ ul {
   display: flex;
   padding-bottom: 94px;
 }
-.clients-logo .item {
+.clients-logo a {
   width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
+  color: #afb1b8;
   border-radius: 4px;
 }
 .clients-logo .item:not(:last-child) {
@@ -359,16 +359,14 @@ ul {
   margin: 0 auto;
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
-.clients-logo .item:hover,
-.clients-logo .item:focus {
+.clients-logo a:hover,
+.clients-logo a:focus {
   border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
-.clients-logo .icon:hover,
-.clients-logo .icon:focus {
-  fill: var(--accent-color);
-}
+
 /* -------FOOTER---------*/
 .footer {
   background-color: #2f303a;
@@ -414,17 +412,26 @@ ul {
 .join-sociallinks {
   padding: 0;
 }
-.join-sociallinks .link {
+
+.join-sociallinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
 }
-.join-sociallinks .link:hover,
-.join-sociallinks .link:focus {
+.join-sociallinks a:hover,
+.join-sociallinks a:focus {
   background-color: var(--accent-color);
 }
 .join-sociallinks .icon {
   width: 20px;
   height: 20px;
-  fill: var(--primary-white-color);
+  fill: currentColor;
 }
 /*-----------PORTFOLIO-----------------*/
 
